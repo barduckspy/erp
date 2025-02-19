@@ -1,1 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+</head>
+<body>
+    <header>
+        <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+        <nav>
+            <ul>
+                <li><a href="{{ '/index.md' | relative_url }}">Главная</a></li>
+                <li><a href="{{ '/about.md' | relative_url }}">О проекте</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {{ content }}
+    </main>
+    <footer>
+        <p>© 2024 {{ site.title }}</p>
+    </footer>
+</body>
+</html>
 
